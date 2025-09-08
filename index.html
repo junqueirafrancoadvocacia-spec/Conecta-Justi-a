@@ -22,7 +22,8 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Conectando Você à <span>Justiça</span></h1>
-        <p>Especialistas em desbloqueio de contas, LOAS, aposentadoria e questões bancárias. Sua solução jurídica está aqui.</p>
+        <p>Sua solução jurídica está aqui! 
+Especialistas em desbloqueio de contas de redes sociais, pedidos de LOAS e aposentadorias, além de diversas questões bancárias.</p>
         <div class="hero-buttons">
           <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="btn btn-blue">Consulta Gratuita</a>
           <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="btn btn-outline">Saiba Mais</a>
@@ -98,7 +99,7 @@
             <span class="contact-icon phone"></span>
             <div>
               <b>Telefone</b><br>
-              (17) 98202-2545
+              (17) 98166-0509
             </div>
           </div>
           <div class="contact-info-item">
@@ -129,26 +130,26 @@
             </a>
           </div>
         </div>
-        <form class="contact-form" id="contactForm" autocomplete="off">
+        <form class="contact-form" autocomplete="off">
           <h3>Solicite sua Consulta Gratuita</h3>
           <div class="row">
             <div>
               <label>Nome Completo *</label>
-              <input type="text" name="nome" required placeholder="Seu nome completo">
+              <input type="text" required placeholder="Seu nome completo">
             </div>
             <div>
               <label>E-mail *</label>
-              <input type="email" name="email" required placeholder="seu@email.com">
+              <input type="email" required placeholder="seu@email.com">
             </div>
           </div>
           <div class="row">
             <div>
               <label>Telefone *</label>
-              <input type="tel" name="telefone" required placeholder="(11) 99999-9999">
+              <input type="tel" required placeholder="(11) 99999-9999">
             </div>
             <div>
               <label>Serviço de Interesse</label>
-              <select name="servico" required>
+              <select required>
                 <option value="">Selecione um serviço</option>
                 <option>Desbloqueio de Contas de Redes Sociais</option>
                 <option>LOAS - Benefício Social</option>
@@ -160,7 +161,7 @@
           </div>
           <div>
             <label>Mensagem</label>
-            <textarea name="mensagem" maxlength="500" placeholder="Descreva sua situação ou dúvida..."></textarea>
+            <textarea maxlength="500" placeholder="Descreva sua situação ou dúvida..."></textarea>
             <div class="char-count"><span id="charCount">0</span>/500 caracteres</div>
           </div>
           <button type="submit" class="btn btn-blue">Enviar Mensagem</button>
@@ -218,19 +219,6 @@
         charCount.textContent = this.value.length;
       });
     }
-    // Formulário de contato envia para WhatsApp
-    document.getElementById('contactForm').onsubmit = function(e) {
-      e.preventDefault();
-      var nome = encodeURIComponent(document.querySelector('[name="nome"]').value);
-      var email = encodeURIComponent(document.querySelector('[name="email"]').value);
-      var telefone = encodeURIComponent(document.querySelector('[name="telefone"]').value);
-      var servico = encodeURIComponent(document.querySelector('[name="servico"]').value);
-      var mensagem = encodeURIComponent(document.querySelector('[name="mensagem"]').value);
-      var texto = `Nome: ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AServiço: ${servico}%0AMensagem: ${mensagem}`;
-      var numero = '5517981660509';
-      var url = `https://wa.me/${numero}?text=${texto}`;
-      window.open(url, '_blank');
-    };
     // Animação smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
