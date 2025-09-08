@@ -130,7 +130,7 @@ nav a:not(.btn):hover { color: var(--azul); background: #fff2; }
 
 /* SERVICES */
 .services {
-  padding: 48px 0 80px 0; /* Espaço extra embaixo */
+  padding: 48px 0 80px 0;
   background: var(--fundo);
   text-align: center;
 }
@@ -149,7 +149,7 @@ nav a:not(.btn):hover { color: var(--azul); background: #fff2; }
   margin-top: 38px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px; /* Espaço extra abaixo dos cards */
+  margin-bottom: 40px;
 }
 .service-card {
   background: var(--cinza-card);
@@ -198,7 +198,7 @@ nav a:not(.btn):hover { color: var(--azul); background: #fff2; }
 /* WHY */
 .why {
   background: #fff;
-  padding: 56px 0 100px 0; /* padding-bottom aumentado para 100px */
+  padding: 56px 0 100px 0;
   max-width: 1200px;
   margin: 0 auto 0 auto;
 }
@@ -478,21 +478,113 @@ footer {
   .why-right { align-items: center; }
   .why-stats { position: static; width: 100%; margin: 16px 0 0 0; }
 }
+
+/* MOBILE MELHORADO */
 @media (max-width: 700px) {
-  header, .hero-content, .why-left, .why-right, .footer-main, .contact-form, .contact-info {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-left: 0; margin-right: 0;
+  html, body {
+    font-size: 15px;
+    overflow-x: hidden;
   }
-  .hero-content { margin: 0; }
-  .why { padding: 36px 0 70px 0;}
-  .footer-main { padding-left: 3vw; padding-right: 3vw; }
-  .contact-form { padding: 22px 7vw 18px 7vw;}
-}
-@media (max-width: 500px) {
-  .hero h1 { font-size: 1.6rem; }
-  .services h2, .why-left h2, .contact h2 { font-size: 1.1rem;}
-  .why-right img { width: 100%; }
-  .contact-form { padding: 16px 2vw; }
-  .footer-main { font-size: 0.97rem; gap: 10px;}
+  header {
+    flex-direction: column;
+    padding: 16px 5vw 8px 5vw;
+    text-align: center;
+    position: static;
+    background: var(--azul);
+  }
+  .logo { margin-bottom: 10px; font-size: 1.18rem; }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 4px;
+  }
+  nav a {
+    margin-left: 0;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .btn, .btn-outline {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 8px;
+    font-size: 1.01rem;
+  }
+  .hero {
+    height: 39vh;
+    min-height: 200px;
+    padding: 0;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+  .hero-content {
+    margin: 0;
+    padding: 26px 4vw 10px 4vw;
+    text-align: center;
+    max-width: 100vw;
+  }
+  .hero h1 { font-size: 1.35rem; }
+  .hero p  { font-size: 1rem; }
+  .hero-buttons { gap: 10px; flex-direction: column; }
+  .services {
+    padding: 22px 0 38px 0;
+  }
+  .services h2 { font-size: 1.15rem;}
+  .services-desc { font-size: 0.98rem;}
+  .services-cards, .why-container, .contact-flex, .footer-main {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .service-card, .why-right img, .contact-form {
+    width: 99vw !important;
+    max-width: 375px !important;
+  }
+  .service-card img { height: 88px; }
+  .service-title { font-size: 1rem; min-height: 32px;}
+  .service-desc { font-size: 0.94rem;}
+  .service-link { font-size: 0.96rem;}
+  .why { padding: 24px 0 48px 0;}
+  .why-left, .why-right {
+    margin: 0;
+    padding: 0 3vw;
+    min-width: unset;
+  }
+  .why-left h2 { font-size: 1.05rem; }
+  .why-left p { font-size: 0.98rem;}
+  .why-right img { width: 100%; max-width: 330px;}
+  .why-stats { flex-direction: column; gap: 7px; padding: 10px 0; font-size: 0.9rem; position: static; }
+  .contact { padding: 22px 0 0 0;}
+  .contact h2 { font-size: 1.1rem;}
+  .contact-desc { font-size: 1rem; margin-bottom: 18px;}
+  .contact-flex { gap: 11px; max-width: 100vw; }
+  .contact-info, .contact-form { padding: 0 2vw; min-width: unset !important; }
+  .contact-info h3 { font-size: 1.01rem; }
+  .contact-info-item { gap: 8px; margin-bottom: 10px;}
+  .contact-icon { width: 26px; height: 26px; background-size: 16px 16px;}
+  .social-btn { width: 28px; height: 28px; }
+  .social-btn img { width: 18px; height: 18px; margin-top: 3px;}
+  .contact-form { padding: 13px 2vw 12px 2vw; max-width: 99vw;}
+  .contact-form h3 { font-size: 1rem; margin-bottom: 10px;}
+  .row { flex-direction: column; gap: 5px; margin-bottom: 7px;}
+  .row > div { min-width: unset;}
+  .contact-form label { font-size: 0.89rem; }
+  .contact-form input, .contact-form select, .contact-form textarea { font-size: 0.95rem; padding: 8px 7px;}
+  .contact-form textarea { min-height: 40px; max-height: 70px;}
+  .char-count { font-size: 0.9rem;}
+  .contact-form button { margin-top: 6px; font-size: 1rem;}
+  footer { font-size: 0.97rem; margin-top: 24px;}
+  .footer-main {
+    flex-direction: column !important;
+    gap: 11px !important;
+    padding: 21px 3vw 13px 3vw !important;
+    max-width: 99vw;
+    font-size: 0.95rem;
+  }
+  .logo-footer { font-size: 1.12rem;}
+  .footer-main p { font-size: 0.97rem;}
+  .footer-main strong { font-size: 1.01rem;}
+  .footer-copy { font-size: 0.94rem; padding: 12px 0 7px 0;}
 }
