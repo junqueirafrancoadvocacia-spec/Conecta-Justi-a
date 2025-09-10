@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Conecta Justiça</title>
-  <!-- Meta tag corrigida para responsividade real -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Conecta Justiça</div>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-      <a href="#contato" class="btn btn-blue">Consulta Gratuita</a>
-    </nav>
-  </header>
-  <main>
-    <!-- HERO -->
+  <div class="hero-wrapper">
+    <header>
+      <div class="logo">Conecta Justiça</div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn-blue btn-mobile-hide">Consulta Gratuita</a>
+      </nav>
+    </header>
     <section class="hero">
       <div class="hero-content">
         <h1>Conectando Você à <span>Justiça</span></h1>
-        <p>Sua solução jurídica está aqui!
-            Especialistas em desbloqueio de contas de redes sociais, pedidos de LOAS e aposentadorias, além de diversas questões bancárias.
-            </p>
+        <p>
+          Sua solução jurídica está aqui! Especialistas em desbloqueio de contas de redes sociais, pedidos de LOAS e aposentadorias, além de diversas questões bancárias.
+        </p>
         <div class="hero-buttons">
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="btn btn-blue">Consulta Gratuita</a>
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="btn btn-outline">Saiba Mais</a>
+          <a href="#contato" class="btn btn-blue">Consulta Gratuita</a>
+          <a href="#sobre" class="btn btn-outline">Saiba Mais</a>
         </div>
       </div>
     </section>
-
-    <!-- SERVIÇOS -->
+  </div>
+  <main>
     <section class="services" id="servicos">
       <h2>Nossos Serviços Especializados</h2>
       <p class="services-desc">Oferecemos soluções jurídicas personalizadas para resolver seus problemas com eficiência e profissionalismo.</p>
@@ -42,30 +40,29 @@
           <img src="teste1.jpg" alt="">
           <div class="service-title">Desbloqueio de Contas de Redes Sociais</div>
           <div class="service-desc">Recuperação de contas do Instagram, Facebook, WhatsApp e outras redes sociais bloqueadas com agilidade e eficiência.</div>
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="service-link">Saiba mais →</a>
+          <a href="#contato" class="service-link">Saiba mais →</a>
         </div>
         <div class="service-card">
           <img src="teste2.jpg" alt="">
           <div class="service-title">LOAS - Benefício Social</div>
           <div class="service-desc">Auxílio na solicitação do Benefício de Prestação Continuada para pessoas com deficiência e idosos.</div>
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="service-link">Saiba mais →</a>
+          <a href="#contato" class="service-link">Saiba mais →</a>
         </div>
         <div class="service-card">
           <img src="teste3.jpg" alt="">
           <div class="service-title">Aposentadoria</div>
           <div class="service-desc">Planejamento e solicitação de aposentadoria com análise completa do seu histórico contributivo.</div>
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="service-link">Saiba mais →</a>
+          <a href="#contato" class="service-link">Saiba mais →</a>
         </div>
         <div class="service-card">
           <img src="teste4.jpg" alt="">
           <div class="service-title">Taxa de Juros Abusiva</div>
           <div class="service-desc">Revisão de contratos de cartão de crédito e financiamentos com juros excessivos.</div>
-          <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="service-link">Saiba mais →</a>
+          <a href="#contato" class="service-link">Saiba mais →</a>
         </div>
       </div>
     </section>
 
-    <!-- POR QUE ESCOLHER -->
     <section class="why" id="sobre">
       <div class="why-container">
         <div class="why-left">
@@ -90,7 +87,6 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
     <section class="contact" id="contato">
       <h2>Entre em Contato</h2>
       <p class="contact-desc">Pronto para resolver sua questão jurídica? Entre em contato conosco para uma consulta gratuita.</p>
@@ -121,10 +117,10 @@
           </div>
           <div class="contact-social">
             <span>Siga-nos</span><br>
-            <a href="https://facebook.com/seuperfil" class="social-btn" target="_blank" aria-label="Facebook">
+            <a href="#" class="social-btn" target="_blank" aria-label="Facebook">
               <img src="Face.png" alt="Facebook" width="28" height="28">
             </a>
-            <a href="https://instagram.com/seuperfil" class="social-btn" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/conecta_justica/" class="social-btn" target="_blank" aria-label="Instagram">
               <img src="Insta.png" alt="Instagram" width="28" height="28">
             </a>
             <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="social-btn" target="_blank" aria-label="WhatsApp">
@@ -177,10 +173,10 @@
         <div class="logo-footer">Conecta Justiça</div>
         <p>Especialistas em conectar pessoas aos seus direitos. Oferecemos soluções jurídicas personalizadas com foco em resultados e satisfação do cliente.</p>
         <div>
-          <a href="https://facebook.com/seuperfil" class="social-btn" target="_blank" aria-label="Facebook">
+          <a href="#" class="social-btn" target="_blank" aria-label="Facebook">
             <img src="Face.png" alt="Facebook" width="28" height="28">
           </a>
-          <a href="https://instagram.com/seuperfil" class="social-btn" target="_blank" aria-label="Instagram">
+          <a href="https://www.instagram.com/conecta_justica/" class="social-btn" target="_blank" aria-label="Instagram">
             <img src="Insta.png" alt="Instagram" width="28" height="28">
           </a>
           <a href="https://wa.me/5517981660509?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre..." class="social-btn" target="_blank" aria-label="WhatsApp">
@@ -213,23 +209,43 @@
     </div>
   </footer>
   <script>
-    // Contador de caracteres live
+    // Contador de caracteres do textarea
     const textarea = document.querySelector('.contact-form textarea');
     const charCount = document.getElementById('charCount');
     if (textarea && charCount) {
       textarea.addEventListener('input', function() {
-        charCount.textContent = this.value.length;
+        charCount.textContent = textarea.value.length;
       });
     }
-    // Animação smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href.length > 1 && document.querySelector(href)) {
+
+    // Envio para WhatsApp
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
           e.preventDefault();
-          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-        }
-      });
+
+          const nome = form.querySelector('input[type="text"]').value.trim();
+          const email = form.querySelector('input[type="email"]').value.trim();
+          const telefone = form.querySelector('input[type="tel"]').value.trim();
+          const servico = form.querySelector('select').value;
+          const mensagem = form.querySelector('textarea').value.trim();
+
+          let texto =
+            `*Consulta via Site Conecta Justiça*\n\n` +
+            `*Nome:* ${nome}\n` +
+            `*Email:* ${email}\n` +
+            `*Telefone:* ${telefone}\n` +
+            `*Serviço de Interesse:* ${servico}\n` +
+            `*Mensagem:* ${mensagem ? mensagem : '(Sem mensagem)'}\n`;
+
+          // Coloque o número do WhatsApp no formato internacional, ex: 5517981660509
+          const numero = '5517981660509';
+          const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+          window.open(link, '_blank');
+        });
+      }
     });
   </script>
 </body>
